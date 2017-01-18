@@ -42,9 +42,7 @@
 
 ### NUI a.k.a. NativeUI
 
-Looks like it is kind of system thingie for drawing chat
-
-Discovered `eventName`s:
+`eventName`:
 - `chatResult`
 
 Funcs:
@@ -55,6 +53,16 @@ Funcs:
 
 
 ## Server
+
+### Events
+
+- `baseevents:onPlayerDied fn(killedByPlayerId: int, pos: vector3)`
+- `baseevents:onPlayerKilled fn(killedBySomethingType: int, pos: vector3)`
+- `baseevents:onPlayerWasted`
+- `baseevents:enteringVehicle fn(...?)`
+- `baseevents:enteringAborted fn(...?)`
+- `baseevents:enteredVehicle fn(...?)`
+- `baseevents:leftVehicle fn(...?)`
 
 ### Variables inside event handler
 
@@ -67,6 +75,9 @@ Funcs:
 - `GetPlayerEP(id: int): int|string` - Returns player's IP address
 - `GetPlayerPing(id: int): int`
 - `GetPlayerIdentifiers(id: int): any[]` - retval[1] is GUID
+
+- `DropPlayer(id: int, message: string): void`
+- `TempBanPlayer(id: int, message: string): void`
 
 - `SetTimeout(duration: int, callback: fn(...args))`
 
