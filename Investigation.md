@@ -4,7 +4,7 @@
 
 - `*Entity: int` - Entity ID
 - `*Model: int` - Model ID
-- `VehicleSeat: int` - -1 for driver, [0,) for passangers
+- `VehicleSeat: int` - -1 for driver, [0,] for passangers
 - `PlayerId: int` - Player ID
 - `PedId: int` - Ped ID
 
@@ -23,15 +23,23 @@
 
 ### Natives (http://www.dev-c.com/nativedb/ angry-cobra-case)
 
-- `IsControlPressed(0, key: int): bool` - See mappings [here](http://www.dev-c.com/nativedb/func/info/f3a21bcd95725a4a)
+- `DoesEntityExist(entity: *Entity): bool`
 
-- `GetPlayerPed(playerId: PlayerId): int` - When player = -1 returns current player's ped?
+- `IsControlPressed(0, key: int): bool` - See mapping [here](http://www.dev-c.com/nativedb/func/info/f3a21bcd95725a4a)
+
+- `GetPlayerPed(playerId: PlayerId): PedId` - When player = -1 returns current player's ped? See `Client:Funcs:PlayerPedId()`
 - `GetPlayerName(playerId: PlayerId): string`
 - `GetPlayerWantedLevel(playerId: PlayerId): int?`
+- `IsPlayerDead(playerId: PlayerId): bool`
 
 - `GetVehiclePedIsUsing(pedId: PedId, currentVehicle: bool = true): VehicleEntity` - if `currentVehicle = false` then will return last used `VehicleEntity`
 - `GetEntityModel(entity: *Entity): *Model`
 - `GetDisplayNameFromVehicleModel(vehicleModel: *Model): string`
+- `IsPedInAnyVehicle(pedId: PedId, atGetIn: bool): bool` - Read more about `atGetIn` [here](http://www.dev-c.com/nativedb/func/info/997abd671d25ca0b)
+- `GetPedInVehicleSeat(vehicleEntity: VehicleEntity, seat: VehicleSeat): PedId`
+- `GetVehicleMaxNumberOfPassangers(vehicleEntity: VehicleEntity): int` - [0,]
+- `GetVehiclePedIsTryingToEnter(pedId: PedId): VehicleEntity`
+- `GetSeatPedIsTryingToEnter(pedId: PedId)`
 
 - `SetClockTime(hours: int, minutes: int, seconds: int)`
 - `PauseClock(toggle: bool)`
@@ -49,7 +57,9 @@
 - `RegisterNetEvent(eventName: string): void` - Registers new event name
 - `AddEventHandler(eventName: string, callback: fn(?)): void` - Adds event handler, callback args vary
 
-- `PlayerId(): PlayerId` - Returns current player
+- `PlayerId(): PlayerId` - Returns current player ID
+- `PlayerPedId(): PedId` - Returns current player ped ID
+
 - `SetTextChatEnabled(toggle: bool): void` - Except obvious?
 
 - `NetworkOverrideClockTime(hours: int, minutes: int, seconds: int): void` - Sets World time? Wut, there's a native for it?!
