@@ -2,6 +2,8 @@
 
 ## Shared
 
+### Funcs
+
 - `GetPlayerName(id: int)`
 
 
@@ -59,10 +61,10 @@ Funcs:
 - `baseevents:onPlayerDied fn(killedByPlayerId: int, pos: vector3)`
 - `baseevents:onPlayerKilled fn(killedBySomethingType: int, pos: vector3)`
 - `baseevents:onPlayerWasted`
-- `baseevents:enteringVehicle fn(...?)`
-- `baseevents:enteringAborted fn(...?)`
-- `baseevents:enteredVehicle fn(...?)`
-- `baseevents:leftVehicle fn(...?)`
+- `baseevents:enteringVehicle fn(vehicle: int, seatIndex: int, vehicleDisplayName: string)` - seat index is -1, 0, ...; -1 is for driver
+- `baseevents:enteringAborted`
+- `baseevents:enteredVehicle fn(vehicle: int, seatIndex: int, vehicleDisplayName: string)`
+- `baseevents:leftVehicle fn(vehicle: int, seatIndex: int, vehicleDisplayName: string)`
 
 ### Variables inside event handler
 
