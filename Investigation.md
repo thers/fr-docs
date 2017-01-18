@@ -6,8 +6,10 @@
 - `*Model: int` - Model ID
 - `VehicleSeat: int` - -1 for driver, [0,] for passangers
 - `PlayerId: int` - Player ID
+- `PlayerServerId: int` - Player ID on server
 - `PedId: int` - Ped ID
 - `PedType: int` - [Ped type](PedTypes.md)
+- `KillReason: int` - [Kill reason](KillReasons.md)
 
 ## Shared
 
@@ -17,6 +19,11 @@
 
 
 ## Client
+
+### Events
+
+- `onPlayerDied fn(playerId: PlayerId, reason: int, position: vec3)`
+- `onPlayerKilled fn(playerId: PlayerId, attackerId: PlayerId, reason: int, position: vec3)`
 
 ### Global tables
 
@@ -41,7 +48,7 @@
 - `GetVehicleMaxNumberOfPassangers(vehicleEntity: VehicleEntity): int` - [0,]
 - `GetVehiclePedIsTryingToEnter(pedId: PedId): VehicleEntity`
 - `GetSeatPedIsTryingToEnter(pedId: PedId)`
-
+fn
 - `SetClockTime(hours: int, minutes: int, seconds: int)`
 - `PauseClock(toggle: bool)`
 
@@ -60,10 +67,13 @@
 
 - `PlayerId(): PlayerId` - Returns current player ID
 - `PlayerPedId(): PedId` - Returns current player ped ID
+- `GetPlayerServerId(playerId: PlayerId): PlayerServerId`
 
 - `SetTextChatEnabled(toggle: bool): void` - Except obvious?
 
 - `NetworkOverrideClockTime(hours: int, minutes: int, seconds: int): void` - Sets World time? Wut, there's a native for it?!
+
+- `echo(message: string): void` - ?
 
 ### NUI a.k.a. NativeUI
 
@@ -97,9 +107,11 @@ Funcs:
 
 - `GetInstanceId(): int` - What instance ID?
 
+- `GetPlayerByServerId(playerServerId: PlayerServerId): {name: string}`
 - `GetPlayerEP(playerId: PlayerId): int|string` - Returns player's IP address
 - `GetPlayerPing(playerId: PlayerId): int`
-- `GetPlayerIdentifiers(playerId: int): any[]` - retval[1] is GUID
+- `GetPlayerIdentifiers(playerId: PlayerId): any[]` - retval[1] is GUID
+- `GetPlayerGuid(playerId: PlayerId): int|string` - Player's GUID, noice
 
 - `DropPlayer(playerId: PlayerId, message: string): void`
 - `TempBanPlayer(playerId: PlayerId, message: string): void`
