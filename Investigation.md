@@ -1,4 +1,4 @@
-# Investigating LUA API
+# LUA API Investigation
 
 ## Types
 
@@ -7,6 +7,7 @@
 - `VehicleSeat: int` - -1 for driver, [0,] for passangers
 - `PlayerId: int` - Player ID
 - `PedId: int` - Ped ID
+- `PedType: int` - [Ped type](PedTypes.md)
 
 ## Shared
 
@@ -80,9 +81,9 @@ Funcs:
 
 ### Events
 
-- `baseevents:onPlayerDied fn(killedByPlayerId: PlayerId, pos: vector3)`
-- `baseevents:onPlayerKilled fn(killedBySomethingType: int, pos: vector3)`
-- `baseevents:onPlayerWasted`
+- `baseevents:onPlayerDied fn(killedByPed: PedType, ...)`
+- `baseevents:onPlayerKilled fn(killedByPlayerId: PlayerId, ...)`
+- `baseevents:onPlayerWasted fn(pos: vec3)`
 - `baseevents:enteringVehicle fn(vehicle: VehicleEntity, seat: vehicleSeat, vehicleDisplayName: string)`
 - `baseevents:enteringAborted`
 - `baseevents:enteredVehicle fn(vehicle: VehicleEntity, seat: vehicleSeat, vehicleDisplayName: string)`
@@ -113,3 +114,11 @@ Funcs:
 - `WasEventCancelled(): bool`
 
 - `RconPrint(message: string): void` - Prints message in server output?
+
+
+
+# The fucks
+
+- `[Client] AddUIHandler(eventName: string, callback: fn(data: any, cb: fn())): void` - And then query `http://{resourceName}/{eventName}` `HTTP GET`
+- `[Client] PollUI()` - unclear
+
