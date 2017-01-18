@@ -1,5 +1,13 @@
 # Investigating LUA API
 
+## Types
+
+- `*Entity: int` - Entity ID
+- `*Model: int` - Model ID
+- `VehicleSeat: int` - -1 for driver, [0,) for passangers
+- `PlayerId: int` - Player ID
+- `PedId: int` - Ped ID
+
 ## Shared
 
 ### Funcs
@@ -17,9 +25,13 @@
 
 - `IsControlPressed(0, key: int): bool` - See mappings [here](http://www.dev-c.com/nativedb/func/info/f3a21bcd95725a4a)
 
-- `GetPlayerPed(player: int): NetHandle?` - When player = -1 returns current player's ped?
-- `GetPlayerName(id: int): string`
-- `GetPlayerWantedLevel(id: int): int?`
+- `GetPlayerPed(playerId: PlayerId): int` - When player = -1 returns current player's ped?
+- `GetPlayerName(playerId: PlayerId): string`
+- `GetPlayerWantedLevel(playerId: PlayerId): int?`
+
+- `GetVehiclePedIsUsing(pedId: PedId, currentVehicle: bool = true): VehicleEntity` - if `currentVehicle = false` then will return last used `VehicleEntity`
+- `GetEntityModel(entity: *Entity): *Model`
+- `GetDisplayNameFromVehicleModel(vehicleModel: *Model): string`
 
 - `SetClockTime(hours: int, minutes: int, seconds: int)`
 - `PauseClock(toggle: bool)`
@@ -34,10 +46,10 @@
 - `Citizen.Trace(message: string): void` - Where's the output?
 - `[Citizen.]Wait(time: int): void` - Sleep, time in millisends?
 
-- `RegisterNetEvent(name: string): void` - Registers new event name
-- `AddEventHandler(name: string, callback: fn(?)): void` - Adds event handler, callback args vary
+- `RegisterNetEvent(eventName: string): void` - Registers new event name
+- `AddEventHandler(eventName: string, callback: fn(?)): void` - Adds event handler, callback args vary
 
-- `PlayerId(): int` - Returns current player
+- `PlayerId(): PlayerId` - Returns current player
 - `SetTextChatEnabled(toggle: bool): void` - Except obvious?
 
 - `NetworkOverrideClockTime(hours: int, minutes: int, seconds: int): void` - Sets World time? Wut, there's a native for it?!
@@ -58,28 +70,28 @@ Funcs:
 
 ### Events
 
-- `baseevents:onPlayerDied fn(killedByPlayerId: int, pos: vector3)`
+- `baseevents:onPlayerDied fn(killedByPlayerId: PlayerId, pos: vector3)`
 - `baseevents:onPlayerKilled fn(killedBySomethingType: int, pos: vector3)`
 - `baseevents:onPlayerWasted`
-- `baseevents:enteringVehicle fn(vehicle: int, seatIndex: int, vehicleDisplayName: string)` - seat index is -1, 0, ...; -1 is for driver
+- `baseevents:enteringVehicle fn(vehicle: VehicleEntity, seat: vehicleSeat, vehicleDisplayName: string)`
 - `baseevents:enteringAborted`
-- `baseevents:enteredVehicle fn(vehicle: int, seatIndex: int, vehicleDisplayName: string)`
-- `baseevents:leftVehicle fn(vehicle: int, seatIndex: int, vehicleDisplayName: string)`
+- `baseevents:enteredVehicle fn(vehicle: VehicleEntity, seat: vehicleSeat, vehicleDisplayName: string)`
+- `baseevents:leftVehicle fn(vehicle: VehicleEntity, seat: vehicleSeat, vehicleDisplayName: string)`
 
 ### Variables inside event handler
 
-- `source: int` - Player's id
+- `source: PlayerId` - Source player id
 
 ### Funcs
 
-- `GetInstanceId(): number` - What instance ID?
+- `GetInstanceId(): int` - What instance ID?
 
-- `GetPlayerEP(id: int): int|string` - Returns player's IP address
-- `GetPlayerPing(id: int): int`
-- `GetPlayerIdentifiers(id: int): any[]` - retval[1] is GUID
+- `GetPlayerEP(playerId: PlayerId): int|string` - Returns player's IP address
+- `GetPlayerPing(playerId: PlayerId): int`
+- `GetPlayerIdentifiers(playerId: int): any[]` - retval[1] is GUID
 
-- `DropPlayer(id: int, message: string): void`
-- `TempBanPlayer(id: int, message: string): void`
+- `DropPlayer(playerId: PlayerId, message: string): void`
+- `TempBanPlayer(playerId: PlayerId, message: string): void`
 
 - `SetTimeout(duration: int, callback: fn(...args))`
 
