@@ -59,7 +59,7 @@
 
 ### Natives hashes
 
-They must be called using `Citizen.CallNative(hash, ...args)`.
+They must be called using `Citizen.InvokeNative(hash, ...args)`.
 
 - `0xB736A491E64A32CF (entity: EntityPointerValue)` - Marks entity as no longer needed, engine will delete it
 
