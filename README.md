@@ -1,2 +1,2 @@
 # fivereborn
-Ugh
+[Ugh](Investigation.md)
