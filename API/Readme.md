@@ -1,3 +1,8 @@
+[Client](Client.md)|[Server](Client.md)
+---|---
+
+---
+
 # LUA API Reference
 
 All of this was found in many of the places like official forums, users resources and server resources.
