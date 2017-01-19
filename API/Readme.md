@@ -32,7 +32,18 @@ Also there're so called pattern-type-aliases: `*Entity: int` means that every ty
 
 ## Declarations explained
 
+Types that used here:
+- `int` - 32 bits Integer
+- `int64` - 64 bits Integer
+- `float` - Float
+- `string` - String
+- `{key: keyType = value: valueType, key2 => value2Type}` - Hash table
+- `ptr` - Pointer
+- `type[]` - array of `type`
 
+For variables: `varName: varType`.
+
+For methods: `methondName(arg1: arg1Type, arg2: arg2Type): returnValueType`.
 
 ## References
 
