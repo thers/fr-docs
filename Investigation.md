@@ -8,8 +8,8 @@
 - `PlayerId: int` - Player ID
 - `PlayerServerId: int` - Player ID on server
 - `PedId: int` - Ped ID
-- `PedType: int` - [Ped type](PedTypes.md)
-- `KillReason: int` - [Kill reason](KillReasons.md)
+- `PedType: int` - [Ped type](Lists/PedTypes.md)
+- `KillReason: int` - [Kill reason](Lists/KillReasons.md)
 - `Hash: int64?`
 
 ## Shared
