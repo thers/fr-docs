@@ -75,7 +75,7 @@ They must be called using `Citizen.CallNative(hash, ...args)`.
 - `Citizen.PointerValueInt(): ptrVal` - Returns initialized int
 - `Citizen.PointerValueFloat(): ptrVal` - Returns initialized float
 - `Citizen.PointerValueVector() ptrVal` - Returns intialized vector
-- `Citizen.ReturnResultAnyway()` - Returns flag to pass to `Citizen.InvokeNative`
+- `Citizen.ReturnResultAnyway()` - Returns flag to pass as last argument of `Citizen.InvokeNative`, if native returns something, pass it.
 - `Citizen.ResultAsInteger()`
 - `Citizen.ResultAsFloat()`
 - `Citizen.ResultAsString()`
