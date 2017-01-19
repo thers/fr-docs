@@ -41,6 +41,7 @@ Types that used here:
 - `ptr` - Pointer
 - `type[]` - array of `type`
 - `fn(arg: argType): returnValueType` - Anonymous function
+- `void` - Void
 
 For variables: `varName: varType`.
 
