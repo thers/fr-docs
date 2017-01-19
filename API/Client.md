@@ -33,8 +33,8 @@ Prints message to scripts logs (Can be accessed pressing F8)
 
 --
 
-#### `[Citizen.]Wait(time: int): void`
-:no_entry_sign: Sleep time in milliseconds (1/1000 of a second)
+#### `Citizen.Wait(time: int): void`
+Sleep time in milliseconds (1/1000 of a second)
 
 ---
 
