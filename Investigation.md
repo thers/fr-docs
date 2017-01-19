@@ -154,3 +154,4 @@ Funcs:
 - `[Client] AddUIHandler(eventName: string, callback: fn(data: any, cb: fn())): void` - And then query `http://{resourceName}/{eventName}` `HTTP GET`
 - `[Client] PollUI()` - unclear
 
+- Entity speed multipliers: km/h - 3.6, mph - 2.236936
