@@ -42,6 +42,8 @@ Types that used here:
 - `type[]` - array of `type`
 - `fn(arg: argType): returnValueType` - Anonymous function
 - `void` - Void
+- `any` - Unknown variable type
+- `type1|type2` - Variable can be both `type1` **or** `type2`
 
 For variables: `varName: varType`.
 
