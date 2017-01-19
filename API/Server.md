@@ -25,7 +25,7 @@ Event Name|Callback declaration
 
 ---
 
-### `GetPlayerName(playerId: PlayerId): string`
+#### `GetPlayerName(playerId: PlayerId): string`
 :no_entry_sign: Returns player's name
 
 ---
