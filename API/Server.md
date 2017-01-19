@@ -25,8 +25,13 @@ Event Name|Callback declaration
 
 ---
 
+### `GetPlayerName(playerId: PlayerId): string`
+:no_entry_sign: Returns player's name
+
+---
+
 #### `GetPlayerByServerId(playerServerId: PlayerServerId): {name: string}`
-:no_entry_sign: Returns actual player ID by it's server ID.
+:no_entry_sign: Returns actual player ID by it's server ID
 
 ---
 
