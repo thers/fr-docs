@@ -1,6 +1,8 @@
 [Source](http://pastebin.com/pwHci0xK)
 
-Chrome:120
+[Source2](http://gtaforums.com/topic/766408-npc-modified-rare-vehicle-bicycle-mega-thread/)
+
+Chrome: 120
  
 Classic/Metallic: (Metallic just adds a Pearlescent Color of the same color to Secondary Color)
 Black:0
@@ -107,3 +109,29 @@ Brushed Black Steel:118
 Brushed Aluminum:119
 Pure Gold:158
 Brushed Gold:159
+
+Unique:
+Unique Pure White:134
+Unique Silver:18
+Unique Worn Sea Green:58
+Unique Matte Lime Green:55
+Unique Feltzer Brown:94
+Unique Worn Red 2:46
+Unique Worn Red:48
+Unique Worn Blue:86
+Unique Metal Pure Gold:159
+Unique Worn Bright Orange:124
+Unique Worn Blue Silver:25
+Unique Worn Dark Blue:85
+Unique Worn "Spinnaker" Purple:162
+Unique Taxi Yellow:126
+Unique Fluorescent Blue:140
+
+
+
+
+
+
+
+
+
