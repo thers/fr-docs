@@ -76,10 +76,10 @@ They must be called using `Citizen.CallNative(hash, ...args)`.
 - `Citizen.PointerValueFloat(): ptrVal` - Returns initialized float
 - `Citizen.PointerValueVector() ptrVal` - Returns intialized vector
 - `Citizen.ReturnResultAnyway()` - Returns flag to pass as last argument of `Citizen.InvokeNative`, if native returns something, pass it.
-- `Citizen.ResultAsInteger()`
-- `Citizen.ResultAsFloat()`
-- `Citizen.ResultAsString()`
-- `Citizen.ResultAsVector()`
+- `Citizen.ResultAsInteger()` - Returns pointer of int to pass to native that will write data to it, but it will be returned from `Citizen.InvokeNative`
+- `Citizen.ResultAsFloat()` - Same for float
+- `Citizen.ResultAsString()` - Same
+- `Citizen.ResultAsVector()` - Same
 
 - `RegisterNetEvent(eventName: string): void` - Registers new event name
 - `AddEventHandler(eventName: string, callback: fn(?)): void` - Adds event handler, callback args vary
