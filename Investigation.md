@@ -10,6 +10,7 @@
 - `PedId: int` - Ped ID
 - `PedType: int` - [Ped type](PedTypes.md)
 - `KillReason: int` - [Kill reason](KillReasons.md)
+- `Hash: int64?`
 
 ## Shared
 
@@ -48,7 +49,7 @@
 - `GetVehicleMaxNumberOfPassangers(vehicleEntity: VehicleEntity): int` - [0,]
 - `GetVehiclePedIsTryingToEnter(pedId: PedId): VehicleEntity`
 - `GetSeatPedIsTryingToEnter(pedId: PedId)`
-fn
+
 - `SetClockTime(hours: int, minutes: int, seconds: int)`
 - `PauseClock(toggle: bool)`
 
@@ -61,6 +62,9 @@ fn
 - `Citizen.CreateThread(callback: fn(...args)): void` - Creates thread?
 - `Citizen.Trace(message: string): void` - Where's the output?
 - `[Citizen.]Wait(time: int): void` - Sleep, time in millisends?
+
+- `Citizen.InvokeNative(hash: Hash, ...args: any): any`
+- `Citizen.PointerValueIntInitialized(pointer: int): intPtr`
 
 - `RegisterNetEvent(eventName: string): void` - Registers new event name
 - `AddEventHandler(eventName: string, callback: fn(?)): void` - Adds event handler, callback args vary
