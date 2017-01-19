@@ -72,14 +72,14 @@ They must be called using `Citizen.CallNative(hash, ...args)`.
 - `Citizen.InvokeNative(hash: Hash, ...args: any): any`
 - `Citizen.PointerValueIntInitialized(ptr: int): ptrVal`
 - `Citizen.PointerValueFloatInitialized(ptr: float): ptrVal`
-- `Citizen.PointerValueInt(ptr: int): ptrVal`
-- `Citizen.PointerValueFloat(ptr: float): ptrVal`
-- `Citizen.PointerValueVector(ptr: vec) ptrVal`
-- `Citizen.ReturnResultAnyway`
-- `Citizen.ResultAsInteger`
-- `Citizen.ResultAsFloat`
-- `Citizen.ResultAsString`
-- `Citizen.ResultAsVector`
+- `Citizen.PointerValueInt(): ptrVal` - Returns initialized int
+- `Citizen.PointerValueFloat(): ptrVal` - Returns initialized float
+- `Citizen.PointerValueVector() ptrVal` - Returns intialized vector
+- `Citizen.ReturnResultAnyway()` - Returns flag to pass to `Citizen.InvokeNative`
+- `Citizen.ResultAsInteger()`
+- `Citizen.ResultAsFloat()`
+- `Citizen.ResultAsString()`
+- `Citizen.ResultAsVector()`
 
 - `RegisterNetEvent(eventName: string): void` - Registers new event name
 - `AddEventHandler(eventName: string, callback: fn(?)): void` - Adds event handler, callback args vary
