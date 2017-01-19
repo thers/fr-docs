@@ -22,13 +22,17 @@ Also there're so called pattern-type-aliases: `*Entity: int` means that every ty
 
 - `*Entity: int`
 - `*Model: int`
-- `VehicleSeat: int` - -1 for driver, [0,] for passangers
+- `VehicleSeat: int` - -1 for driver, 0,1,2,... for passangers
 - `PlayerId: int`
 - `PlayerServerId: int`
 - `PedId: int`
 - `PedType: int`
 - `KillReason: int`
 - `Hash: int64`
+
+## Declarations explained
+
+
 
 ## References
 
