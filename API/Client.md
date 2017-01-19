@@ -125,8 +125,3 @@ Returns player's server ID by it's ID
 
 #### `NetworkOverrideClockTime(hours: int, minutes: int, seconds: int): void`
 Sets World time
-
----
-
-#### `echo(message: string): void`
-:no_entry_sign: Prints message somewhere
