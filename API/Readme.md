@@ -37,7 +37,8 @@ Types that used here:
 - `int64` - 64 bits Integer
 - `float` - Float
 - `string` - String
-- `{key = valueType, key2 = value2Type}` - Hash table
+- `{keyName = valueType, key2Name = value2Type}` - Hash table
+- `{keyType => valueType}` - Map
 - `ptr` - Pointer
 - `type[]` - array of `type`
 - `fn(arg: argType): returnValueType` - Anonymous function
