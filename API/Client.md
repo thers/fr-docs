@@ -17,12 +17,6 @@ Event Name|Callback declaration
 
 ## Methods
 
-#### `GetInstanceId(): int`
-:no_entry_sign: What instance ID?
-
----
-
-
 #### `Citizen.CreateThread(callback: fn()): void`
 Creates new thread for `callback` function
 
