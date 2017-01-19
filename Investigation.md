@@ -23,6 +23,7 @@
 
 ### Events
 
+- `onPlayerSpawn fn(?)`
 - `onPlayerDied fn(playerId: PlayerId, reason: int, position: vec3)`
 - `onPlayerKilled fn(playerId: PlayerId, attackerId: PlayerId, reason: int, position: vec3)`
 
