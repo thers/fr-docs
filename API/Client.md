@@ -29,7 +29,7 @@ Creates new thread for `callback` function
 ---
 
 #### `Citizen.Trace(message: string): void`
-:no_entry_sign: Prints message to scripts logs (Can be accessed pressing F8)
+Prints message to scripts logs (Can be accessed pressing F8)
 
 --
 
