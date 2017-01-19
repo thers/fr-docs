@@ -37,9 +37,10 @@ Types that used here:
 - `int64` - 64 bits Integer
 - `float` - Float
 - `string` - String
-- `{key: keyType = value: valueType, key2 => value2Type}` - Hash table
+- `{key = valueType, key2 = value2Type}` - Hash table
 - `ptr` - Pointer
 - `type[]` - array of `type`
+- `fn(arg: argType): returnValueType` - Method
 
 For variables: `varName: varType`.
 
