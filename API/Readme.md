@@ -40,7 +40,7 @@ Types that used here:
 - `{key = valueType, key2 = value2Type}` - Hash table
 - `ptr` - Pointer
 - `type[]` - array of `type`
-- `fn(arg: argType): returnValueType` - Method
+- `fn(arg: argType): returnValueType` - Anonymous function
 
 For variables: `varName: varType`.
 
