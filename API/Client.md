@@ -97,25 +97,26 @@ Adds event handler, callback args vary
 
 ---
 
+#### `NetworkOverrideClockTime(hours: int, minutes: int, seconds: int): void`
+Sets World time
+
+---
+
 #### `PlayerId(): PlayerId`
-Returns current player ID
+:no_entry_sign: Returns current player ID
 
 ---
 
 #### `PlayerPedId(): PedId`
-Returns current player ped ID
+:no_entry_sign: Returns current player ped ID
+**Use `GetPlayerPed(-1)` instead**
 
 ---
 
 #### `GetPlayerServerId(playerId: PlayerId): PlayerServerId`
-Returns player's server ID by it's ID
+:no_entry_sign: Returns player's server ID by it's ID
 
 ---
 
 #### `SetTextChatEnabled(toggle: bool): void`
 **Probably useless** Toggles displaying of native chat
-
----
-
-#### `NetworkOverrideClockTime(hours: int, minutes: int, seconds: int): void`
-Sets World time
