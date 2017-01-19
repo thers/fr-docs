@@ -57,6 +57,12 @@
 - `IsScreenFadingOut(): bool`
 - `DoScreenFadeIn(duration: int): void`
 
+### Natives hashes
+
+They must be called using `Citizen.CallNative(hash, ...args)`.
+
+- `0xB736A491E64A32CF (entity: EntityPointerValue)` - Marks entity as no longer needed, engine will delete it
+
 ### Funcs
 
 - `Citizen.CreateThread(callback: fn(...args)): void` - Creates thread?
@@ -64,7 +70,16 @@
 - `[Citizen.]Wait(time: int): void` - Sleep, time in millisends?
 
 - `Citizen.InvokeNative(hash: Hash, ...args: any): any`
-- `Citizen.PointerValueIntInitialized(pointer: int): intPtr`
+- `Citizen.PointerValueIntInitialized(ptr: int): ptrVal`
+- `Citizen.PointerValueFloatInitialized(ptr: float): ptrVal`
+- `Citizen.PointerValueInt(ptr: int): ptrVal`
+- `Citizen.PointerValueFloat(ptr: float): ptrVal`
+- `Citizen.PointerValueVector(ptr: vec) ptrVal`
+- `Citizen.ReturnResultAnyway`
+- `Citizen.ResultAsInteger`
+- `Citizen.ResultAsFloat`
+- `Citizen.ResultAsString`
+- `Citizen.ResultAsVector`
 
 - `RegisterNetEvent(eventName: string): void` - Registers new event name
 - `AddEventHandler(eventName: string, callback: fn(?)): void` - Adds event handler, callback args vary
