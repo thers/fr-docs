@@ -113,7 +113,7 @@ Returns player's server ID by it's ID
 ---
 
 #### `SetTextChatEnabled(toggle: bool): void`
-:no_entry_sign: Toggles displaying of native chat
+**Probably useless** Toggles displaying of native chat
 
 ---
 
