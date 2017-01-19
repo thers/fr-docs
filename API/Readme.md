@@ -1,4 +1,4 @@
-[Client](Client.md)|[Server](Client.md)
+[Client](Client.md)|[Server](Server.md)
 ---|---
 
 ---
