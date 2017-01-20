@@ -29,6 +29,7 @@ Also there're so called pattern-type-aliases: `*Entity: int` means that every ty
 - `PedType: int`
 - `KillReason: int`
 - `Hash: int64`
+- `BlipId: int`
 
 ## Declarations explained
 
