@@ -1,5 +1,6 @@
 [Source](http://pastebin.com/5um8q0rd)
 
+```c#
 public enum ControlKey
 {
         None                              = -1,
@@ -342,3 +343,4 @@ public enum ControlKey
         VehicleSlowMoDownOnly             = 336,
         MapPointOfInterest                = 337,
 }
+```
