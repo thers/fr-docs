@@ -7,6 +7,15 @@ They're just predefined global LUA methods.
 ## Methods
 
 
+### Player
+
+#### `PlayerId(): int`
+
+Returns native player id
+
+---
+
+
 ### Blips
 
 #### `AddBlipForCoord(x: float, y: float: z: float): BlipId` [UI::ADD_BLIP_FOR_COORD](http://www.dev-c.com/nativedb/func/info/5a039bb0bca604b6)
