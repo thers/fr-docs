@@ -2,6 +2,7 @@
 
 [Source2](http://gtaforums.com/topic/766408-npc-modified-rare-vehicle-bicycle-mega-thread/)
 
+```
 Chrome: 120
  
 Classic/Metallic: (Metallic just adds a Pearlescent Color of the same color to Secondary Color)
@@ -126,12 +127,4 @@ Unique Worn Dark Blue:85
 Unique Worn "Spinnaker" Purple:162
 Unique Taxi Yellow:126
 Unique Fluorescent Blue:140
-
-
-
-
-
-
-
-
-
+```
