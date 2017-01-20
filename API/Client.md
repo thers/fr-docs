@@ -10,7 +10,7 @@
 
 Event Name|Callback declaration
 ----------|--------------------
-:no_entry_sign:`onPlayerSpawn`|`fn()`
+`playerSpawned`|`fn(spawn: vector3)`
 :no_entry_sign:`onPlayerDied`|`fn(playerId: PlayerId, reason: int, position: float[3])`
 :no_entry_sign:`onPlayerKilled`|`fn(playerId: PlayerId, attackerId: PlayerId, reason: int, position: float[3])`
 
