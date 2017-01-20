@@ -1,10 +1,26 @@
 # Incomplete list of natives
 
+
 ## Usage
 
 They're just predefined global LUA methods.
 
+
 ## Methods
+
+### Common
+
+#### `RequestModel(model: Hash): void`
+Request to load the given model. Model could be vehicle, ped, weapon or object
+
+---
+
+#### `HasModelLoaded(model: Hash): bool`
+Returns `true` if given model has been loaded, `false` otherwise.
+
+> Always check if model loaded before using it
+
+---
 
 
 ### Player
