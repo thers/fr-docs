@@ -62,3 +62,24 @@ Sets blip sprite. [List of sprites](https://wiki.gtanet.work/index.php?title=Bli
 Toggle path to the blip (like GPS)
 
 ---
+
+
+### Vehicles
+
+#### `CreateVehicle(model: Hash, x: float, y: float, z: float, heading: float, networkHandle: bool, vehicleHandle: bool): VehicleEntity` [VEHICLE::CREATE_VEHICLE](http://www.dev-c.com/nativedb/func/info/af35d0d2583051b0)
+
+Creates vehicle. [Models list](https://wiki.gtanet.work/index.php?title=Vehicle_Models)
+
+> Consider setting both `networkHandle` and `vehicleHandle` to true
+
+---
+
+
+
+
+
+
+
+
+
+
