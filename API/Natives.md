@@ -24,3 +24,9 @@ They're just predefined global LUA methods.
 - `displayId == 8` Radar
 
 ---
+
+#### `SetBlipColour(blip: BlipId, colourId: int): void` [UI::SET_BLIP_COLOUR](http://www.dev-c.com/nativedb/func/info/03d7fb09e75d6b7e)
+
+:no_entry_sign: Sets blip colour. [List of colours](https://github.com/RiderSx/fr-docs/blob/master/Lists/BlipsColours.png)
+
+---
