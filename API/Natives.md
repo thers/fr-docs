@@ -9,7 +9,7 @@ They're just predefined global LUA methods.
 
 ### Blips
 
-#### `AddBlipForCoord(x: float, y: float: z: float): BlipId`
+#### `AddBlipForCoord(x: float, y: float: z: float): BlipId` [UI::ADD_BLIP_FOR_COORD](http://www.dev-c.com/nativedb/func/info/5a039bb0bca604b6)
 
 :no_entry_sign: Adds blip to the coords.
 
