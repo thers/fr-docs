@@ -102,17 +102,6 @@ Sets World time
 
 ---
 
-#### `PlayerId(): PlayerId`
-:no_entry_sign: Returns current player ID
-
----
-
-#### `PlayerPedId(): PedId`
-:no_entry_sign: Returns current player ped ID
-**Use `GetPlayerPed(-1)` instead**
-
----
-
 #### `GetPlayerServerId(playerId: PlayerId): PlayerServerId`
 :no_entry_sign: Returns player's server ID by it's ID
 
