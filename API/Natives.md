@@ -63,7 +63,7 @@ Sets blip colour. [List of colours](https://github.com/RiderSx/fr-docs/blob/mast
 
 #### `SetBlipRouteColour(blip: BlipId, colourId: int): void` [UI::SET_BLIP_ROUTE_COLOUR](http://www.dev-c.com/nativedb/func/info/837155cd2f63da09)
 
-Sets blip colour. [List of colours](https://github.com/RiderSx/fr-docs/blob/master/Lists/BlipsColours.png)
+Sets colour for the path to the blip. [List of colours](https://github.com/RiderSx/fr-docs/blob/master/Lists/BlipsColours.png)
 
 ---
 
