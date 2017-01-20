@@ -9,9 +9,14 @@ They're just predefined global LUA methods.
 
 ### Player
 
-#### `PlayerId(): int`
+#### `PlayerId(): PlayerId`
+Returns current player ID
 
-Returns native player id
+---
+
+#### `PlayerPedId(): PedId`
+Returns current player ped ID
+**Use `GetPlayerPed(-1)` instead**
 
 ---
 
