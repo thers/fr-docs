@@ -36,6 +36,7 @@ Also there're so called pattern-type-aliases: `*Entity: int` means that every ty
 Types that used here:
 - `int` - 32 bits Integer
 - `int64` - 64 bits Integer
+- `bool` - Boolean
 - `float` - Float
 - `string` - String
 - `{keyName = valueType, key2Name = value2Type}` - Hash table
@@ -55,3 +56,5 @@ For methods: `methondName(arg1: arg1Type, arg2: arg2Type): returnValueType`.
 
 - [Server API](Server.md)
 - [Client API](Client.md)
+- [Natives](Natives.md)
+- [Natives hashes](NativesHashes.md)
