@@ -18,7 +18,21 @@ Request to load the given model. Model could be vehicle, ped, weapon or object
 #### `HasModelLoaded(model: Hash): bool`
 Returns `true` if given model has been loaded, `false` otherwise.
 
-> Always check if model loaded before using it
+> Better check if model loaded before using it
+
+---
+
+#### `HasCollisionForModelLoaded(model: Hash): bool
+Returns `true` if collisions for given has been loaded, `false` otherwise.
+
+> Better check if model loaded before using it
+
+---
+
+#### `GetHashKey(value: string): Hash`
+Returns hash key from string name.
+
+> Like for value `NERO` it will return 1034187331
 
 ---
 
@@ -89,13 +103,3 @@ Creates vehicle. [Models list](https://wiki.gtanet.work/index.php?title=Vehicle_
 > Consider setting both `networkHandle` and `vehicleHandle` to true
 
 ---
-
-
-
-
-
-
-
-
-
-
