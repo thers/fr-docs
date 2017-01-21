@@ -109,6 +109,33 @@ Creates vehicle. [Models list](https://wiki.gtanet.work/index.php?title=Vehicle_
 
 ---
 
+#### `GetNumModKits(vehicle: VehicleEntity): int` [VEHICLE::GET_NUM_MOD_KITS](http://www.dev-c.com/nativedb/func/info/33f2e3fe70eaae1d)
+Returns number of mod kits for given vehicle.
+
+---
+
+#### `SetVehicleModKit(vehicle: VehicleEntity, modKit: int): void` [VEHICLE::SET_VEHICLE_MOD_KIT](http://www.dev-c.com/nativedb/func/info/1f2aa07f00b3217a)
+Sets vehicle mod kit.
+
+> Consider setting the mod kit of the vehicle to `0` if you're gonna apply mods to the vehicle
+
+---
+
+#### `GetVehicleModKit(vehicle: VehicleEntity): int` [VEHICLE::GET_VEHICLE_MOD_KIT](http://www.dev-c.com/nativedb/func/info/6325d1a044ae510d)
+Returns vehicle mod kit.
+
+---
+
+#### `GetVehicleWheelType(vehicle: VehicleEntity): int` [VEHICLE::GET_VEHICLE_WHEEL_TYPE](http://www.dev-c.com/nativedb/func/info/b3ed1bfb4be636dc)
+Returns wheel type given vehicle has. [List of wheel types](https://github.com/RiderSx/fr-docs/blob/master/Lists/WheelTypes.md)
+
+---
+
+#### `SetVehicleWheelType(vehicle: VehicleEntity, type: int): void` [VEHICLE::SET_VEHICLE_WHEEL_TYPE](http://www.dev-c.com/nativedb/func/info/487eb21cc7295ba1)
+Set vehicle wheel type. [List of wheel types](https://github.com/RiderSx/fr-docs/blob/master/Lists/WheelTypes.md)
+
+---
+
 
 ### Weapons
 
