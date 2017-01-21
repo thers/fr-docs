@@ -22,7 +22,7 @@ Returns `true` if given model has been loaded, `false` otherwise.
 
 ---
 
-#### `HasCollisionForModelLoaded(model: Hash): bool
+#### `HasCollisionForModelLoaded(model: Hash): bool`
 Returns `true` if collisions for given has been loaded, `false` otherwise.
 
 > Better check if model loaded before using it
