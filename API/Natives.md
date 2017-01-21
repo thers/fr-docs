@@ -13,8 +13,7 @@ They're just predefined global LUA methods.
 
 ## Methods
 
-<details>
-#### <summary>Common</summary>
+#### Common
 
 #### `RequestModel(model: Hash): void`
 Request to load the given model. Model could be vehicle, ped, weapon or object
@@ -42,7 +41,6 @@ Returns hash key from string name.
 
 ---
 
-</details>
 
 ### Player
 
