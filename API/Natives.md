@@ -108,3 +108,12 @@ Creates vehicle. [Models list](https://wiki.gtanet.work/index.php?title=Vehicle_
 > Consider setting both `networkHandle` and `vehicleHandle` to true
 
 ---
+
+
+### Weapons
+
+#### `GiveWeaponToPed(ped: *Entity, model: Hash, ammoCount: int, isHidden: bool, equipNow: bool)` [WEAPON::GIVE_WEAPON_TO_PED](http://www.dev-c.com/nativedb/func/info/bf0fd6e56c964fcb)
+
+Gives ped a weapon. [List of weapons](https://wiki.gtanet.work/index.php?title=Weapons_Models)
+
+---
