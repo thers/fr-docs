@@ -11,7 +11,7 @@ Some of it was tested.
 
 ## Legend
 
-Whenever you see :no_entry_sign: near item you should consider it untested (except natives, it's too much of them to test each one).
+Whenever you see :no_entry_sign: near item you should consider it untested.
 
 ## Types aliases
 
