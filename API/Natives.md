@@ -136,6 +136,51 @@ Set vehicle wheel type. [List of wheel types](https://github.com/RiderSx/fr-docs
 
 ---
 
+#### `GetNumModColors(p0: int, p1: bool): int` [VEHICLE::GET_NUM_MOD_COLORS](http://www.dev-c.com/nativedb/func/info/a551be18c11a476d)
+:no_entry_sign: Returns number of color mods available for vehicle.
+
+> Assuming that `p0` is `VehicleEntity` and `p1` is ???
+
+---
+
+#### `SetVehicleModColor_1(vehicle: VehicleEntity, paintType: int, color: int, 0)` [VEHICLE::SET_VEHICLE_MOD_COLOR_1](http://www.dev-c.com/nativedb/func/info/43feb945ee7f85b8)
+Sets vehicle primary color.
+
+- [List of paint types](https://github.com/RiderSx/fr-docs/blob/master/Lists/VehicleColoursTypes.md)
+- [List of colours](https://github.com/RiderSx/fr-docs/blob/master/Lists/VehicleColours.md)
+
+---
+
+#### `SetVehicleModColor_2(vehicle: VehicleEntity, paintType: int, color: int)` [VEHICLE::SET_VEHICLE_MOD_COLOR_2](http://www.dev-c.com/nativedb/func/info/816562badfdec83e)
+Sets vehicle secondary color.
+
+- [List of paint types](https://github.com/RiderSx/fr-docs/blob/master/Lists/VehicleColoursTypes.md)
+- [List of colours](https://github.com/RiderSx/fr-docs/blob/master/Lists/VehicleColours.md)
+
+---
+
+#### `GetVehicleModColor_1(vehicle: VehicleEntity): (paintType: int, color: int)` [VEHICLE::GET_VEHICLE_MOD_COLOR_1](http://www.dev-c.com/nativedb/func/info/e8d65ca700c9a693)
+Returns vehicle primary paint type and color.
+
+- [List of paint types](https://github.com/RiderSx/fr-docs/blob/master/Lists/VehicleColoursTypes.md)
+- [List of colours](https://github.com/RiderSx/fr-docs/blob/master/Lists/VehicleColours.md)
+
+##### Example of usage:
+
+```lua
+local paintType, colour = GetVehicleModColor_1(vehicle)
+```
+
+---
+
+#### `GetVehicleModColor_2(vehicle: VehicleEntity): (paintType: int, color: int)` [VEHICLE::GET_VEHICLE_MOD_COLOR_2](http://www.dev-c.com/nativedb/func/info/81592be4e3878728)
+Returns vehicle secondary paint type an color.
+
+- [List of paint types](https://github.com/RiderSx/fr-docs/blob/master/Lists/VehicleColoursTypes.md)
+- [List of colours](https://github.com/RiderSx/fr-docs/blob/master/Lists/VehicleColours.md)
+
+---
+
 
 ### Weapons
 
