@@ -13,6 +13,8 @@ They're just predefined global LUA methods.
 
 ## Methods
 
+<h1>Common</h1>
+
 ### Common
 
 #### `RequestModel(model: Hash): void`
