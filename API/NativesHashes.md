@@ -1,3 +1,8 @@
+[Back](Readme.md)|[Natives](Natives.md)|Natives hashes
+---|---|---
+
+---
+
 # Incomplete list of useful natives hashes
 
 
