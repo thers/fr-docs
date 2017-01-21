@@ -1,3 +1,8 @@
+[Back](Readme.md)|Natives|[Natives hashes](Server.md)
+---|---|---
+
+---
+
 # Incomplete list of natives
 
 
