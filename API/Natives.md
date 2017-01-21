@@ -1,4 +1,4 @@
-[Back](Readme.md)|Natives|[Natives hashes](Server.md)
+[Back](Readme.md)|Natives|[Natives hashes](NativesHashes.md)
 ---|---|---
 
 ---
