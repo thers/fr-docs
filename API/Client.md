@@ -87,8 +87,8 @@ Returns pointer of int to pass to native that will write data to it, but it will
 
 ---
 
-#### `RegisterNetEvent(eventName: string): void`
-Registers new event name
+#### `RegisterServerEvent(eventName: string): void`
+Registers new server event name
 
 ---
 
