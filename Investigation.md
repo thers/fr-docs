@@ -1,4 +1,4 @@
-# LUA API Investigation
+# Lua API Investigation
 
 ## Types
 
