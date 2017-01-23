@@ -31,7 +31,7 @@ Pick a template: "Visual C#" -> "Class library".
 
 ![](https://i.imgur.com/C5dpWHu.png)
 
-## Configure the solution
+## Configuration
 
 ### Configure project properties
 
