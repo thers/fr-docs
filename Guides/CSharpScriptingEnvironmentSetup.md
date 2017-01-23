@@ -14,7 +14,7 @@ We will assume that your client installed here `C:\FiveReborn\client` and server
 
 We will create a resource named `example`.
 
-Make a resource folder inside `C:\FiveReborn\server` with a name`example`.
+Make a resource folder inside `C:\FiveReborn\server\resources` with a name`example`.
 
 Then create a `__resource.lua` file in it with content:
 ```lua
