@@ -44,7 +44,7 @@ Now you wanna add the "Post-build" event so when you build your project it will 
 
 Go to "Build Events" tab in the project properties and add "Post-build event command line":
 ```
-copy /y $(TargetPath) C:\FiveReborn\server\resources\example
+copy /y "$(TargetPath)" "C:\FiveReborn\server\resources\example"
 ```
 ![](https://i.imgur.com/6ggUKpg.png)
 
