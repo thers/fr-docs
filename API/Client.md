@@ -3,7 +3,7 @@
 ---
 
 
-# Client side LUA API
+# Client side Lua API
 
 
 ## Events
