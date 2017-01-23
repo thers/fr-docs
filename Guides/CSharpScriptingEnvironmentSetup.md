@@ -29,7 +29,7 @@ Create it with whatever name you like whereever you like, it doesn't matter.
 
 Pick a template: "Visual C#" -> "Class library".
 
-![](https://i.imgur.com/okuoMtG.png)
+![](https://i.imgur.com/C5dpWHu.png)
 
 ## Configure the solution
 
@@ -53,8 +53,8 @@ copy /y $(TargetPath) C:\FiveReborn\server\resources\example
 
 In order to work with API you need to add reference to the base library called `CitizenFX.Core`.
 
-Select "Add Reference" in "References" context menu.
-![](https://i.imgur.com/undefined.png)
+Click "Add Reference" in "References" context menu.
+![](https://i.imgur.com/yL8Rhhj.png)
 
 On the bottom of the opened window click "Browse...".
 ![](https://i.imgur.com/n4NAQ4O.png)
