@@ -8,44 +8,97 @@
 
 We will assume that your client installed here `C:\FiveReborn\client` and server installed here `C:\FiveReborn\server`.
 
-## Creating a solution
+## Preparation
 
-1. Create it from template: "Visual C#" -> "Class library".
-2. You want it to be created inside `resources` folder of the server installation. Thats to simplify development.
-3. *Make sure to pick lowercase name for your solution.*
+### Create a resource
+
+We will create a resource named `example`.
+
+Make a resource folder inside `C:\FiveReborn\server` with a name`example`.
+
+Then create a `__resource.lua` file in it with content:
+```lua
+client_script "example.net.dll"
+```
+
+### Create project in Visual Studio
+
+`File -> New -> Project`
+
+Create it with whatever name you like whereever you like, it doesn't matter.
+
+Pick a template: "Visual C#" -> "Class library".
+
+![](https://i.imgur.com/okuoMtG.png)
 
 ## Configure the solution
 
-Open the project properties.
+### Configure project properties
 
-![](https://i.imgur.com/ik3qMz9.png)
+Open project properties.
+![](https://i.imgur.com/SSbokJB.png)
 
-Change the name of assembly. From, lets say, `MyAwesomeResource` you should get `myawesomeresource.net`.
+Change the "Assembly name" to `example.net.dll`. This is needed for FiveReborn client to pick up that correctly.
 
-![](https://i.imgur.com/cENp543.png)
+Now you wanna add the "Post-build" event so when you build your project it will automatically copy `example.net.dll` to your resource folder.
 
-Go to "Build" section. Select "Release" configuration. Change the build path to lowercase one.
+Go to "Build Events" tab in the project properties and add "Post-build event command line":
+```
+copy /y $(TargetPath) C:\FiveReborn\server\resources\example
+```
+![](https://i.imgur.com/6ggUKpg.png)
 
-![](https://i.imgur.com/ya6zw52.png)
 
-Don't forget to select the same "Release" configuration on toolbar.
+### Add the reference to `CitizenFX.Core`
 
-![](https://i.imgur.com/1sklXLI.png)
+In order to work with API you need to add reference to the base library called `CitizenFX.Core`.
 
-## Link `CitizenFX.Core`
-
-Select "Add Reference" in references context menu.
-
-![](https://i.imgur.com/NM4fxsF.png)
+Select "Add Reference" in "References" context menu.
+![](https://i.imgur.com/undefined.png)
 
 On the bottom of the opened window click "Browse...".
+![](https://i.imgur.com/n4NAQ4O.png)
 
 Now you need to navigate to your client installation directory. In it follow the path `citizen\clr2\lib\mono\4.5`.
 
 Select `CitizenFX.Core.dll` and hit "Add".
 
-## Make `__resource.lua`
+## Finishing
 
-In order for FiveReborn to pick up your script you should make `__resource.lua` in the root of your solution.
+That's it, your environment is ready.
 
+Don't forget to add your resource to the `AutoStartResources` section of `C:\FiveReborn\server\citmp-server.yml` so it will, you know, automatically start :)
 
+## Example of the code
+
+This will show notification above the minimap when you press `Z` on keyboard.
+
+```c#
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+using CitizenFX.Core;
+using CitizenFX.Core.UI;
+
+namespace Example
+{
+  public class Class1: BaseScript
+  {
+    public Class1()
+    {
+      Tick += OnTick;
+    }
+
+    public async Task OnTick()
+    {
+      // Show notification when Z was pressed
+      if (Game.IsControlJustReleased(0, Control.MultiplayerInfo))
+      {
+        Screen.ShowNotification("Hello, mister!");
+      }
+    }
+  }
+}
+```
