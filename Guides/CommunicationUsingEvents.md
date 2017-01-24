@@ -37,7 +37,10 @@ AddEventHandler("myResourceName:ping", function(message)
   -- Now we need to send "pong" event back to client
   -- Again, number of arguments and arguments itself may vary as you wish
   -- Just remember that first argument for function TriggerClientEvent is always an event name
-  TriggerClientEvent("myResourceName:pong", "It's me! Server!");
+  -- And the second argument (source in this example) must be an ID of the player.
+  -- If you want to send event to all players clients use -1 value
+  -- If you want to send event back to the player client that send that event use predefined var "source"
+  TriggerClientEvent("myResourceName:pong", source, "It's me! Server!");
 end)
 ```
 
