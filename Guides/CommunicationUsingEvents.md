@@ -34,7 +34,7 @@ AddEventHandler("myResourceName:ping", function(message)
   -- Just print the message to the server's console so you can see that event has been received
   print("Received myResourceName:ping event with message: " .. message)
   
-  -- Now we need to send "ping" event back to client
+  -- Now we need to send "pong" event back to client
   -- Again, number of arguments and arguments itself may vary as you wish
   -- Just remember that first argument for function TriggerClientEvent is always an event name
   TriggerClientEvent("myResourceName:pong", "It's me! Server!");
