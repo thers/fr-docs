@@ -10,6 +10,7 @@
 
 Event Name|Callback declaration
 ----------|--------------------
+`onClientMapStart`|`fn(res: any)`
 `playerSpawned`|`fn(spawn: vector3)`
 :no_entry_sign:`onPlayerDied`|`fn(playerId: PlayerId, reason: int, position: float[3])`
 :no_entry_sign:`onPlayerKilled`|`fn(playerId: PlayerId, attackerId: PlayerId, reason: int, position: float[3])`
