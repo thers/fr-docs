@@ -1,2 +1,1 @@
-# fivereborn
-[Ugh](Investigation.md)
+Nothing to see here.
