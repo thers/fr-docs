@@ -95,7 +95,7 @@ They must be called using `Citizen.InvokeNative(hash, ...args)`.
 
 - `echo(message: string): void` - ?
 
-### NUI a.k.a. NativeUI
+### NUI
 
 `eventName`:
 - `chatResult`
